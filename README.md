@@ -26,3 +26,7 @@ Other way to add github repository remote origin
 ´´´
 git remote add origin "https://$GITHUB_ACTOR:{{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git"
 ´´´
+
+### About env
+
+There is something wrong related with the fetch method that doesn´t allow the script to push but i cant figure out what is the problem, need to review later
