@@ -1,11 +1,23 @@
 name: Actions Workflow
 
-on: [push]
+on:
+  pull_request:
+    branches:
+      - main
+      - 'feature/*'
+    # branches-ignore:
+    tags:
+      - v1.*
+    paths:
+      - '**.js'
+      - '!filename.js'
 
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: payload
+        run: echo ${{ github.event.client_payload.env }}
       - name: List Files
         run: |
           pwd
