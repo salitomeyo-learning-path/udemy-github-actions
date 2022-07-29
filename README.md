@@ -19,3 +19,10 @@ curl \
 
 We can use the following cheat sheet to create filter patterns
 https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
+
+
+Other way to add github repository remote origin
+
+´´´
+git remote add origin "https://$GITHUB_ACTOR:{{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git"
+´´´
