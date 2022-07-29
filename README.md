@@ -16,3 +16,6 @@ curl \
   https://api.github.com/repos/salitomeyo-learning-path/udemy-github-actions/dispatches \
   -d '{"event_type":"build","client_payload":{"unit":false,"integration":true,"env":"production"}}'
 ´´´
+
+We can use the following cheat sheet to create filter patterns
+https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
