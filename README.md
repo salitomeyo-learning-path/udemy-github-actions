@@ -30,3 +30,7 @@ git remote add origin "https://$GITHUB_ACTOR:{{ secrets.GITHUB_TOKEN }}@github.c
 ### About env
 
 There is something wrong related with the fetch method that doesn´t allow the script to push but i cant figure out what is the problem, need to review later
+
+### Encrypt
+
+To encrypt the files we will use https://www.gnupg.org/download/index.html but i didnt downloaded it so the test will fail, for this reason y commented it
